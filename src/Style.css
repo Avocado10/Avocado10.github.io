@@ -1,16 +1,19 @@
-body{
+body {
     font-family: sans-serif;
     background-color: bisque;
     text-align: center;
 }
 
-h1{
+h1 {
     text-align: centerß;
     color: brown;
     margin-left: 5px;
 }
 
-p{
+div {
+    background-color: azure;
+}
+p {
     /*text-align: left;*/
     color: darkslategray;
     margin-left: 20px;
