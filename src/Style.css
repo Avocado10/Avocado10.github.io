@@ -2,7 +2,6 @@ body {
     font-family: sans-serif;
     background-color:azure;
     text-align: center;
-    /*border: 2px solid brown;*/
 }
 
 h1 {
@@ -18,5 +17,5 @@ p {
     text-align: left;
     border-left: 6px solid brown;
     color: darkslategray;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
