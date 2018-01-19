@@ -1,0 +1,16 @@
+body{
+    font-family: sans-serif;
+    background-color: bisque;
+    margin: 0 15%;
+}
+
+h1{
+    text-align: right;
+    color: brown;
+    margin-left: 20px;
+}
+
+p{
+    text-align: center;
+    color: darkslategray;
+}
