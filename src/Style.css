@@ -2,6 +2,8 @@ body {
     font-family: sans-serif;
     background-color:azure;
     text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1 {
@@ -15,7 +17,7 @@ div {
 }
 p {
     text-align: left;
-    border-left: 6px solid brown;
+    border-left: 4px solid brown;
     color: darkslategray;
     /*margin-left: 20px;*/
 }
