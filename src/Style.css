@@ -15,7 +15,7 @@ div {
     background-color: azure;
 }
 p {
-    /*text-align: left;*/
+    text-align: left;
     border-left: 6px solid brown;
     color: darkslategray;
     margin-left: 20px;
