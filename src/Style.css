@@ -11,7 +11,7 @@ h1{
 }
 
 p{
-    text-align: left;
+    /*text-align: left;*/
     color: darkslategray;
     margin-left: 5px;
 }
