@@ -31,10 +31,14 @@ body {
 .content {
     background-color: #ddd;
     padding: 0px;
-    height: 800px; /* Should be removed. Only for demonstration */
+    height: 700px; /* Should be removed. Only for demonstration */
 }
 
 .footer {
     background-color: #f1f1f1;
     padding: 10px;
+}
+
+h1,h2{
+    font-family: 'Cabin Sketch', cursive;
 }
