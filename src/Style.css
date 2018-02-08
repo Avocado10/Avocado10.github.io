@@ -44,7 +44,15 @@ body {
 
 }
 
+.footer p {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
 
 h1,h2{
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Cabin Sketch', oblique;
 }
