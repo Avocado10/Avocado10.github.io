@@ -56,7 +56,9 @@ body {
 
 h1,h2{
     font-family: 'Cabin Sketch', bold;
+    font-size: 100px;
     text-align: center;
+    
 }
 
 p {
