@@ -33,7 +33,7 @@ body {
 .content {
     background-color: #ddd;
     padding: 0px;
-    height: 700px; /* Should be removed. Only for demonstration */
+    height: 800px; /* Should be removed. Only for demonstration */
 }
 
 .footer {
@@ -55,8 +55,8 @@ body {
 }
 
 h1,h2{
-    font-family: 'Cabin Sketch', bold;
-    font-size: 100px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
     text-align: center;
     
 }
