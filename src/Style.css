@@ -41,7 +41,10 @@ body {
 
 h1,h2{
     font-family: 'Cabin Sketch', cursive;
-    font-weight: 700;
     font-size: 300em;
     text-align: center;
+}
+
+p{
+    font-family: 'Delius Unicase', cursive；
 }
