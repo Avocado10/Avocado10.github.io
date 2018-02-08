@@ -36,7 +36,6 @@ body {
 }
 
 .footer {
-    background-color: #f1f1f1;
     padding: 8px;
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
