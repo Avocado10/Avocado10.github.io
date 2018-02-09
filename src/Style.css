@@ -22,7 +22,7 @@ body {
     text-align: center;
     padding: 18px 18px;
     font-family: 'Delius Unicase', cursive;
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-decoration: none;
 }
 
@@ -51,8 +51,9 @@ body {
     float: center;
     display: block;
     color: #dff0ff;
+    font-size: 0.8em;
     text-align: center;
-    padding: 0px 0px;
+    padding: 10px 0px;
     text-decoration: none;
 }
 
