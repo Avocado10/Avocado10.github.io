@@ -34,7 +34,6 @@ body {
 .content {
     background-color: #ddd;
     padding: 0px;
-    height: 800px; /* Should be removed. Only for demonstration */
 }
 
 .footer {
@@ -58,7 +57,7 @@ body {
 h1,h2{
     font-family: 'Cabin Sketch', cursive;
     font-style: oblique;
-    font-size: 50px;
+    font-size: 76px;
     text-align: center;
     
 }
