@@ -33,6 +33,8 @@ body {
 
 .content {
     background-color: #ddd;
+    background-image: url("Ball_no_BG.png");
+    height: 80%;
     padding: 0px;
 }
 
