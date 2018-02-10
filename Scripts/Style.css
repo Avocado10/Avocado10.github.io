@@ -85,3 +85,16 @@ p {
     height: 34px;
     overflow: hidden;
 }
+
+#footer-peep #peep-icons {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 10px;
+    bottom: 4px;
+}
+
+#footer-peep #peep-icons li {
+    position: relative;
+    float: left;
+}
