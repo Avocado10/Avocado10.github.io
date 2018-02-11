@@ -9,40 +9,49 @@
     <title>Avocado10</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Delius+Unicase:700|Fredericka+the+Great|Unkempt:700" rel="stylesheet">
 </head>
-
+<!--This is an one page website designed by Ling-->
 <body>
-    <div class="topnav">
-        <a href="#">Me </a>
-        <a href="https://zzzyiling.myportfolio.com/">Works</a>
-        <a href="#">Message</a>
-      </div>
-      
-      <div class="content"> 
-        <h1>I'M LING!</h1>
-        <h2>Welcome To My Universe; )</h2>
-        <p>The background would be a picture of universe</p>
-      </div>
+  <div>
 
-      <footer id="footer">
-          <div id="footer-bar" style="height: 64px;">
-            <div id="footer-bar-display" class="css-animator" style="transition-duration: 0s; transform: translate(0px, 0%);"></div>
-          </div>
-          <div id="footer-peep">
-            <a class="flp-btn Avovado-logo" href="Avocado2.jpg" rel="address:/" title="Lovingly avocado designed and developed by me.">
-              <div class="logo css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);"></div>
-            </a>
-            <div class="f-on copyright css-animator" title="Copyright Yiling 2018" style="transition-duration: 0s; opacity: 1; display: block;">© 2018</div>
-            <ul id="peep-icons">
-              <li class="f-on css-animator" style="transition-duration: 0s; opacity: 1; display: list-item;"><a class="flp-btn ft-icon behance-icon" href="http://www.behance.net/ImAdam" title="Behance" target="_blank"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px;"></div></a></li>
-              <li class="f-on css-animator" style="transition-duration: 0s; opacity: 1; display: list-item;"><a class="flp-btn ft-icon facebook-icon" href="https://www.facebook.com/ImAdamTM" title="Facebook" target="_blank"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px;"></div></a></li>
-              <li class="f-on css-animator" style="transition-duration: 0s; opacity: 1; display: list-item;"><a class="flp-btn ft-icon twitter-icon" href="http://twitter.com/ImAdamTM" title="Follow me on Twitter" target="_blank"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px;"></div></a></li>
-              <li class="f-on css-animator" style="transition-duration: 0s; opacity: 1; display: list-item;"><a class="flp-btn ft-icon linkedin-icon" href="http://www.linkedin.com/in/ImAdamTM" title="Join my network on LinkedIn" target="_blank"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px;"></div></a></li>
-              <li class="f-on css-animator" style="transition-duration: 0s; opacity: 1; display: list-item;"><a class="flp-btn ft-icon email-icon" href="/contact" title="Contact" rel="address:/contact"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);"></div></a></li>
-              <li class="f-on css-animator" style="transition-duration: 0s; opacity: 1; display: list-item;"><a class="flp-btn ft-icon close-icon go-close-footer-info" href="#close" title="Info"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);"></div></a></li>
-              <li class="f-off css-animator" style="transition-duration: 0s; opacity: 0; display: none;"><a class="flp-btn ft-icon info-icon go-footer-info" href="#info" title="Info"><div class="ft-btn css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);"></div></a></li>
-            </ul>
-          </div>
-        </footer>
+    <!-- Navigation links-->
+    <div id="nav">
+      <ul>
+        <li><a href="Life">Life</a></li>
+        <li><a href="Work">Work</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="page1">
+      <a id="Life" class="smooth"></a>
+      <!--Page content goes here-->
+    </div>
+
+    <div id="page2">
+      <a id="Work" class="smooth"></a>
+      <!--Page content goes here-->
+    </div>
+
+    <div id="page1">
+      <a id="Contact" class="smooth"></a>
+      <!--Page content goes here-->
+    </div>
+
+  </div>
+
+<!--Code for scrolling pages smoothly-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+  <script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+      
+      return false;
+  });
+  </script>
 </body>
 
 </html>
