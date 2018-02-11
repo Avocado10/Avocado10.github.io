@@ -22,24 +22,35 @@
       </ul>
     </div>
 
-    <div id="page1">
-      <a id="Life" class="smooth"></a>
-      <!--Page content goes here-->
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('Life', this, 'green')" id="defaultOpen">Life</button>
+    <button class="tablink" onclick="openPage('Work', this, 'blue')">Work</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <p>Home is where the heart is..</p>
     </div>
 
-    <div id="page2">
-      <a id="Work" class="smooth"></a>
-      <!--Page content goes here-->
+    <div id="Life" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p> 
     </div>
 
-    <div id="page1">
-      <a id="Contact" class="smooth"></a>
-      <!--Page content goes here-->
+    <div id="Work" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
   </div>
 
 <!--Code for scrolling pages smoothly-->
+<!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
   <script>
@@ -52,6 +63,7 @@
       return false;
   });
   </script>
+-->
 </body>
 
 </html>
