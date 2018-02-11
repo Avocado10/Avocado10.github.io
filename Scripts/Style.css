@@ -1,5 +1,5 @@
 body, html {
-    height: 100%;
+    height: 200%;
     margin: 0;
     font-family: Arial;
   }
@@ -30,7 +30,7 @@ body, html {
   }
   
   #Home {background-color: #faaca8;}
-  #Life {background-color: green;}
-  #Work {background-color: blue;}
-  #About {background-color: orange;}
+  #Life {background-color: rgb(173, 224, 173);}
+  #Work {background-color: rgb(70, 79, 161);}
+  #About {background-color: rgb(238, 194, 113);}
   
