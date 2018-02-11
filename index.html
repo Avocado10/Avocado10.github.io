@@ -22,11 +22,6 @@
       </ul>
     </div>
 
-    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-    <button class="tablink" onclick="openPage('Life', this, 'green')" id="defaultOpen">Life</button>
-    <button class="tablink" onclick="openPage('Work', this, 'blue')">Work</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
-
     <div id="Home" class="tabcontent">
       <h3>Home</h3>
       <p>Home is where the heart is..</p>
@@ -47,6 +42,12 @@
       <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('Life', this, 'green')" id="defaultOpen">Life</button>
+    <button class="tablink" onclick="openPage('Work', this, 'blue')">Work</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+
   </div>
 
 <!--Code for scrolling pages smoothly-->
@@ -64,6 +65,33 @@
   });
   </script>
 -->
+
+<script>
+  function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 
 </html>
