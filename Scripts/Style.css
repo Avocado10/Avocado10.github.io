@@ -29,7 +29,11 @@ body, html {
     height: 100%;
   }
   
-  #Home {background-image: url(Pictures/Sky2.png);}
+  #Home {
+    background-image: url("Pictures/Sky2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   #Life {background-color:#8f94fb);}
   #Work {background-color: rgb(70, 79, 161);}
   #Contact {background-color: rgb(238, 194, 113);}
