@@ -30,9 +30,11 @@ body, html {
   }
   
   #Home {
-    background:url("Pictures/Sky2.png");
+    background: url(Pictures/Sky1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
   }
   #Life {background-color:#8f94fb;}
   #Work {background-color: rgb(70, 79, 161);}
