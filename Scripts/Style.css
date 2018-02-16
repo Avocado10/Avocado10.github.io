@@ -42,12 +42,12 @@ body, html {
   #Work {background-color: rgb(70, 79, 161);}
   #Contact {background-color: rgb(238, 194, 113);}
 
-  /*#bg{
+  #bg{
     position: fixed; 
     top: 0; 
     left: 0; 
     
-     Preserve aspet ratio 
+     /*Preserve aspet ratio */
     min-width: 100%;
     min-height: 90%;
-  }*/
+  }
