@@ -55,7 +55,7 @@ body, html {
     min-height: 100%;
   }*/
 
-  .bg {
+  .bg1 {
     background: url(Sky_One.png) no-repeat center center fixed;
     background-size: cover;
   }
