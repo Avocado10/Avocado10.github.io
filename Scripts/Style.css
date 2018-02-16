@@ -31,7 +31,7 @@ body, html {
   
   #Home {
     background-image: url(Pictures/Sky2.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   #Life {background-color:#8f94fb);}
