@@ -30,13 +30,23 @@ body, html {
   }
   
   #Home {
-    background: url(Pictures/Sky1.jpg) no-repeat center center fixed; 
+    /*background: url(Pictures/Sky1.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
   }
   #Life {background-color:#8f94fb;}
   #Work {background-color: rgb(70, 79, 161);}
   #Contact {background-color: rgb(238, 194, 113);}
+
+  #bg{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
   
