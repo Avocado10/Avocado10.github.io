@@ -15,48 +15,37 @@
 
     <!-- Navigation links-->
     <div id="Home" class="tabcontent bg1">
-      <h3>Home</h3>
-      <p>Home is where the heart is..</p>
+      <h1>Hi! I'm Ling!</h1>
+      <p>Welcome to my Universe:3</p>
+      <div id="pic1">
+          <img id="Planet1" src="Scripts/Planet1.png" alt="A Planet Picture">
+      </div>
     </div>
 
-    <div id="Life" class="tabcontent">
-      <h3>News</h3>
+    <div id="Life" class="tabcontent bg2">
+      <h1>News</h1>
       <p>Some news this fine day!</p> 
     </div>
 
     <div id="Work" class="tabcontent">
-        <h3>Work</h3>
+        <h1>Work</h1>
         <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
     <div id="Contact" class="tabcontent">
-      <h3>Contact</h3>
+      <h1>Contact</h1>
       <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
     <button class="tablink" onclick="openPage('Home', this, '#3F4C6B')" id="defaultOpen">Home</button>
-    <button class="tablink" onclick="openPage('Life', this, '#8f94fb')">Life</button>
+    <button class="tablink" onclick="openPage('Life', this, '#ffafbd')">Life</button>
     <button class="tablink" onclick="openPage('Work', this, 'blue')">Work</button>
     <button class="tablink" onclick="openPage('Contact', this, 'rgb(238, 194, 113)')">Contact</button>
 
 
   </div>
 
-<!--Code for scrolling pages smoothly-->
-<!--
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-  <script>
-  $('.smooth').on('click', function() {
-      $.smoothScroll({
-          scrollElement: $('body'),
-          scrollTarget: '#' + this.id
-      });
-      
-      return false;
-  });
-  </script>
--->
+  <div id= "todays-date">The date goes here.</div>
 
 <script>
   function openPage(pageName, elmnt, color) {
@@ -82,6 +71,12 @@
 
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+
+  var TodaysDate= new Date();
+  var dateElement= document.querySelector("#todays-date");
+  dateElement.innerHTML= TodaysDate;
+
+  var myImage= document.querySelector('bg');
 </script>
 
 </body>
