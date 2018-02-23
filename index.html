@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="Scripts/Style.css">
     <title>Avocado10</title>
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Delius+Unicase:700|Fredericka+the+Great|Unkempt:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Delius+Unicase:700|Aclonica|Fredericka+the+Great|Unkempt:700" rel="stylesheet">
 </head>
 <!--This is an one page website designed by Ling-->
 <body>
@@ -15,8 +15,9 @@
 
     <!-- Navigation links-->
     <div id="Home" class="tabcontent bg1">
-      <h1>Hi! I'm Ling!</h1>
-      <p>Welcome to my Universe:3</p>
+      <h1>HI! I'M LING!</h1>
+      <p id="p1">WElCOME TO MY </p>
+      <p id="p2">WORLD:3</p>
       <div id="pic1">
           <img id="Planet1" src="Scripts/Planet1.png" alt="A Planet Picture">
       </div>
@@ -39,13 +40,13 @@
 
     <button class="tablink" onclick="openPage('Home', this, '#3F4C6B')" id="defaultOpen">Home</button>
     <button class="tablink" onclick="openPage('Life', this, '#ffafbd')">Life</button>
-    <button class="tablink" onclick="openPage('Work', this, 'blue')">Work</button>
+    <button class="tablink" onclick="openPage('Work', this, '#99CC66')">Work</button>
     <button class="tablink" onclick="openPage('Contact', this, 'rgb(238, 194, 113)')">Contact</button>
 
 
   </div>
 
-  <div id= "todays-date">The date goes here.</div>
+  <!-- <div id= "todays-date">The date goes here.</div> -->
 
 <script>
   function openPage(pageName, elmnt, color) {
@@ -72,9 +73,9 @@
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 
-  var TodaysDate= new Date();
-  var dateElement= document.querySelector("#todays-date");
-  dateElement.innerHTML= TodaysDate;
+  // var TodaysDate= new Date();
+  // var dateElement= document.querySelector("#todays-date");
+  // dateElement.innerHTML= TodaysDate;
 
   var myImage= document.querySelector('bg');
 </script>
