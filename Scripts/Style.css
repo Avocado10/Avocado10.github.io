@@ -22,7 +22,6 @@ body, html {
   
   .tablink:hover {
     background-color: #777;
-    border-radius: 10%;
   }
   
   /* Style the tab content (and add height:100% for full page content) */
@@ -61,6 +60,14 @@ body, html {
     background-size: cover,cover;
   }
 
+  .bg3 {
+    background: url(Green.png);
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover,cover;
+  }
+
+
   h1{ 
     font-family: 'Aclonica', sans-serif;
     font-size:40px;
@@ -94,10 +101,14 @@ body, html {
 
   #Planet1:hover{
     animation: rotate infinite 15s linear;
-    animation-delay: 2s;
+    animation-delay: .5s;
     position: absolute;
     top: 10%;
     left: 5%;
+  }
+
+  #Road{
+    position: absolute;
   }
 
   @keyframes rotate{
