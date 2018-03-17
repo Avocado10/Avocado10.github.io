@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="Logo.png">
+  <link rel="stylesheet" type="text/css" href="Scripts/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Rokkitt|Sedgwick+Ave|Ubuntu" rel="stylesheet">
+  <title>Yiling</title>
+</head>
+
+
+<body>
+  <!--Navigation-->
+  <div id="nav">
+    <ul>
+      <!-- <a href="#me" id="top-icon"><img src="Logo.png"></a> -->
+      <li><a href="/Users/lynn/Desktop/Avocado10.github.io/index.html" class="active">ME</a></li>
+      <li><a href="/Users/lynn/Desktop/Avocado10.github.io/Life.html" class="nav_bar_click">LIFE</a></li>
+      <li><a href="/Users/lynn/Desktop/Avocado10.github.io/work.html" class="nav_bar_click">WORK</a></li>
+      <li><a href="/Users/lynn/Desktop/Avocado10.github.io/Contact.html" class="nav_bar_click">CONTACT</a></li>
+    </ul>
+    </div>
+
+    <div class="header" id="myHeader">
+            <p>Click on the buttons to change the grid view.</p>
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+    </div>
+
+     <div class="row"> 
+        <div class="column">
+          <img src="Pictures/Bird.jpeg">
+          <img src="Pictures/Bucket.jpeg">
+          <img src="Pictures/Jump.jpeg">
+        </div>
+        <div class="column">
+          <img src="Pictures/house.jpeg">
+          <img src="Pictures/Lake.jpeg">
+          <img src="Pictures/Bird.jpeg">
+        </div>
+        <div class="column">
+                <img src="Pictures/Bysea1.jpeg">
+                <img src="Pictures/Bysea2.jpeg">
+                <img src="Pictures/Coffee.jpeg">
+                <img src="Pictures/Dawn.jpeg">
+                <img src="Pictures/Explore.png">
+                <img src="Pictures/Flowerandnews.jpg">
+                <img src="Pictures/Palace.jpg">
+              </div>
+              <div class="Pictures/Mushrooms.jpeg">
+                <img src="Pictures/Mewalking.jpeg">
+                <img src="Pictures/Neighbors.jpeg">
+                <img src="Pictures/Mebysea.jpeg">
+                <img src="Pictures/LunchTime.jpeg">
+                <img src="Pictures/Light1.jpeg">
+                <img src="Pictures/Light2.jpeg">
+              </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <p>Website Designed by Yiling</p>
+    </div>
+
+    <script>
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+            
+            // Declare a loop variable
+            var i;
+            
+            // Full-width images
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "100%";  // IE10
+                    elements[i].style.flex = "100%";
+                }
+            }
+            
+            // Two images side by side
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "50%";  // IE10
+                    elements[i].style.flex = "50%";
+                }
+            }
+            
+            // Four images side by side
+            function four() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "25%";  // IE10
+                    elements[i].style.flex = "25%";
+                }
+            }
+            
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+    </script>
+            
+
+    
+</body>
+</html>
