@@ -1,21 +1,23 @@
 body{
     margin: 0;
     padding: 0;
+    width:100%;
 
-    background: #232323;
-    color: #cdcdcd;
+    background: #ffffff;
+    color: #161616;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
 
-/* nav{
-    width: 300px;
-    height: 100%;
-    position: absolute;
-    -webkit-transform: translate(-300px,0);
-    transform: (-300px,0);
-    transition: transform 0.3s ease;
-} */
+    transition: color 0.3s ease;
+}
+
+a:hover div{
+    color: aquamarine;
+}
 
 #Hamburger{
     display: block;
@@ -30,7 +32,7 @@ body{
 }
 
 #Hamburger input{
-    display: flex;
+    display: block;
     width: 40px;
     height: 32px;
     position: absolute;
@@ -41,6 +43,8 @@ body{
 
     opacity: 0;
     z-index: 2;
+
+    -webkit-touch-callout: none;
 }
 
 #Hamburger span{
@@ -48,9 +52,10 @@ body{
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
+    margin-top: 5px;
     position: relative;
 
-    background: #cdcdcd;
+    background: #3a3a3a;
     border-radius: 3px;
 
     z-index: 1;
@@ -58,8 +63,62 @@ body{
     transform-origin: 4px 0px;
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              /* background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), */
               opacity 0.55s ease; 
+}
 
+#Hamburger span:first-child{
+    transform-origin: 0% 0%;
+}
 
+#Hamburger span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+#Hamburger input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    /* background: #3a3a3a; */
+}
+
+#Hamburger input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#Hamburger input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 55%;
+  height: 1000px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #3a3a3a;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#Hamburger input:checked ~ ul
+{
+  transform: none;
 }
