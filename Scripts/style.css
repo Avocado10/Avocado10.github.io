@@ -101,7 +101,8 @@ a:hover{
 {
   position: absolute;
   width: 33%;
-  height: 1000px;
+  height: 400px;
+  opacity: 0.9;
   margin: -120px 0 0 -50px;
   padding: 50px;
   padding-top: 160px;
@@ -302,6 +303,12 @@ div.item-1:hover{
     }
     .item-1{
         width: calc(100%/3);
+    }
+    #title1{
+        font-size: 60px;
+    }
+    #title2,#title3{
+        font-size: 1.2em;
     }
 }
 
