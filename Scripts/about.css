@@ -130,6 +130,8 @@ a:hover{
 
 
 div.container{
+    display: flex;
+    flex-wrap: wrap;
     margin: 80px auto;
     width: 80%;
     max-width: 1200px;
@@ -137,10 +139,35 @@ div.container{
 }
 
 .profile-image{
-    margin: 0.4em 0;
-    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 img{
     display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 1.6em;
+    width: 80%;
+    margin: 0 auto;
+}
+.intro{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 200px;
+    font-size: 0.95em;
+}
+
+p{
+    padding-bottom: 0;
+}
+
+#Ename{
+    margin: 0;
 }
