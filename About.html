@@ -36,34 +36,58 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container"> 
+    <div class="PicPart">
       <div class="title">
-          <h2 id="Ename">Hi, this is Lynn</h2>
+          <h2 class="Ename">Hi, this is Yiling</h2>
       </div>
       <div class="profile-image">
           <img src="Pictures/800px/Profile.jpg" alt="profile Picture">
       </div>
+    </div>
+      
       <div class="intro">
           <p id="name">Yiling Zheng</p>
-          <p>I love travelling, films, gym, photography</p>
-          <p>Also, haning out with friends</p>
+          <p>I love travelling, films, photography</p>
+          <p>I am a Health + Gym nut</p>
+          <p>Also, haning out with friends is my fav</p>
           <p>And I am willing to explore new areas</p>
-          <p>Being happy to make friends</p>
-          <p>Being a desinger is my dream job</p>
+          <p>Always Being happy to make friends</p>
+          <p>Being a desinger and photography is my dream</p>
       </div>
+      <hr>
+  </div>
+
+  <div class="container2">
+    <div class="PositionText">
+      <h2 class="Ename">Find me here</h2>
+    </div>
+    <div id="map"></div>
+
   </div>
 
 
 
+<div class="footer">
+  <p>Yiling  @2018</p>
+</div>
 
+<script>
+    function initMap() {
+      var uluru = {lat: 35.9049, lng: -79.0469};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeQk6u1lT6chk3fuioaj-VjDypurKSFpA&callback=initMap">
+</script>
 
 </body>
-
-
-
-
-
-
-
-
-  </html>
+</html>
