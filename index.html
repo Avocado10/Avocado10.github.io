@@ -30,7 +30,7 @@
         <a href="index.html"><li>Home</li></a>
         <a href="About.html"><li>About</li></a>
         <a href="Stories.html"><li>Stories</li></a>
-        <a href="#"><li>Work</li></a>
+        <a href="#"><li>Portfolio</li></a>
         <a href="#"><li>Contact</li></a>
       </ul>
     </div>
@@ -135,5 +135,20 @@
   <div class="footer">
     <p>Yiling  @2018</p>
   </div>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#menu').click(function () {
+      var here = $(this).next('.b');
+     if (here.is(":visible")) {
+         here.hide();
+     } else {
+         here.show();
+     }
+     return false;
+   });
+ });
+</script>
 </body>
 </html>

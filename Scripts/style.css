@@ -210,10 +210,10 @@ h1
     position: relative;
     transition: all .1s ease-in;
 
-    &:hover{
+    /* &:hover{
         top: -2px;
         box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    }
+    } */
 }
 
 
