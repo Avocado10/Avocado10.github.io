@@ -34,6 +34,16 @@
         <a href="#"><li>Contact</li></a>
       </ul>
     </div>
+
+    <ul class="tab">
+        <div class="innertab"><a id="selected" href="index.html"><li>Home</li></a></div>
+        <div class="innertab"><a href="About.html"><li>About</li></a></div>
+        <div class="innertab"><a  href="Stories.html"><li>Stories</li></a></div>
+        <div class="innertab"><a href="#"><li>Portfolio</li></a></div>
+        <div class="innertab"><a href="#"><li>Contact</li></a></div>
+    </ul>
+
+
   </nav>
 
   <!--Content-->
@@ -138,17 +148,19 @@
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-  $(document).ready(function () {
-    $('#menu').click(function () {
-      var here = $(this).next('.b');
-     if (here.is(":visible")) {
-         here.hide();
-     } else {
-         here.show();
-     }
-     return false;
-   });
+var $menu = $('#menu');
+
+$('#Hamburger').click(function () {
+  $menu.toggle();
+});
+
+$(document).mouseup(function (e) {
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $menu.hide();
+  }
  });
-</script>
+ </script>
 </body>
 </html>
