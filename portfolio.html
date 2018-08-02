@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="Logo.png">
+  <link rel="stylesheet" type="text/css" href="Scripts/portfolio.css">
+  <title>Yiling</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
+    @import url('https://fonts.googleapis.com/css?family=Sacramento');
+    @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,400i,500');
+  </style>
+</head>
+
+
+<body>
+  <!--Navigation-->
+  <nav class="container1">
+    <!--This is a hamburger menu-->
+    <div id="Hamburger">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+    
+
+      <ul id="menu">
+        <a href="index.html"><li>Home</li></a>
+        <a href="About.html"><li>About</li></a>
+        <a href="Stories.html"><li>Stories</li></a>
+        <a href="portfolio.html"><li>Portfolio</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </div>
+
+    <ul class="tab">
+        <div class="innertab"><a id="selected" href="index.html"><li>Home</li></a></div>
+        <div class="innertab"><a href="About.html"><li>About</li></a></div>
+        <div class="innertab"><a  href="Stories.html"><li>Stories</li></a></div>
+        <div class="innertab"><a href="portfolio.html"><li>Portfolio</li></a></div>
+        <div class="innertab"><a href="#"><li>Contact</li></a></div>
+    </ul>
+
+  </nav>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('ux')"> UX</button>
+  <button class="btn" onclick="filterSelection('gd')"> Graphics Design</button>
+  <button class="btn" onclick="filterSelection('other')"> Other</button>
+</div>
+
+<div class="row">
+  <div class="column ux">
+    <div class="content">
+      <img src="Pictures/600*380/persona.png" style="width:100%">
+      <h4>Persona 「PS」「User Research」</h4>
+      <p>Going research to extract the main characters of our target users</p>
+    </div>
+  </div>
+
+  <div class="column ux">
+      <div class="content">
+        <img src="Pictures/600*380/redesign.png" style="width:100%">
+        <h4>Reddit redesign 「PS」「UI」</h4>
+        <p>Pilot interview, design analysis, redesign and review</p>
+      </div>
+    </div>
+
+    <div class="column gd">
+        <div class="content">
+          <img src="Pictures/600*380/dragon2.png" alt="Mountains" style="width:100%">
+          <h4>Identidy design 1「AI」</h4>
+          <p>Polygon-styled liberty statue</p>
+      </div>
+    </div>
+  
+    <div class="column gd">
+      <div class="content">
+          <img src="Pictures/600*380/Yiling.png" alt="Lights" style="width:100%">
+          <h4>Identity design 2「AI」</h4>
+          <p>The simple version of bussiness card design: how it evolves from idea to sketch and final design</p>
+      </div>
+    </div>
+
+  <div class="column gd">
+      <div class="content">
+        <img src="Pictures/600*380/liberty.png" alt="Mountains" style="width:100%">
+        <h4>Liberty「AI」</h4>
+        <p>Polygon-styled liberty statue</p>
+    </div>
+  </div>
+
+  <div class="column gd">
+    <div class="content">
+        <img src="Pictures/600*380/lettuce.png" alt="Lights" style="width:100%">
+        <h4>Concert promoter 「AI」</h4>
+        <p>Two totally different poster design for a funk band concert in Raleigh</p>
+    </div>
+  </div>
+
+  <div class="column gd">
+    <div class="content">
+        <img src="Pictures/600*380/tiger.png" alt="Lights" style="width:100%">
+        <h4>Football Game Promoter「AI」</h4>
+        <p>Same color and image, different design</p>
+    </div>
+  </div>
+
+  
+
+
+
+  <div class="column gd">
+    <div class="content">
+        <img src="Pictures/600*380/magazine.png" alt="Lights" style="width:100%">
+        <h4>Magazine design 「Id」</h4>
+        <p>Theme focused magazine design: murder on the orient train</p>
+    </div>
+  </div>
+
+  <div class="column gd">
+      <div class="content">
+          <img src="Pictures/600*380/map.png" alt="Lights" style="width:100%">
+          <h4>Info graphics 「AI」</h4>
+          <p>Some interesting information about dogs in USA</p>
+      </div>
+    </div>
+
+</div>
+
+
+  <!--Footer-->
+<div class="footer">
+   <p>Yiling  @2018</p>
+</div>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+var $menu = $('#menu');
+
+$('#Hamburger').click(function () {
+  $menu.toggle();
+});
+
+$(document).mouseup(function (e) {
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $menu.hide();
+  }
+ });
+
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+ </script>
+</body>
+</html>

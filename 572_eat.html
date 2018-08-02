@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yiling">
+  <meta name="description" content="website built for e-trading between person">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Go Tar</title>
+  <script src="jquery.js"></script>
+  <link type="text/css" rel="stylesheet" href="Scripts/572.css">
+  <link rel="go-tar-icon" alt="go-tar-icon" href="Pictures/SVG/Gotar.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Quattrocento:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-nav">
+    <div class="logo-container">
+      <a id="logo" href="572_home.html"><img src="Pictures/SVG/GoTar.svg"></a>
+      <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="menu">
+      <li><a class="active" href="572_eat.html">EAT</a></li>
+      <li><a href="572_event.html">EVENT</a></li>
+      <li><a href="572_account.html">TRANSPORT</a></li>
+      <li><a href="572_contact.html">ACADEMIA</a></li>
+    </div>
+  </div>      
+
+  <hr>
+
+  <div class="ranking-container">
+      <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('Breakfast')"> Breakfast/Brunch</button>
+          <button class="btn" onclick="filterSelection('Lunch')">Lunch</button>
+          <button class="btn" onclick="filterSelection('Dinner')"> Dinner</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column Breakfast">
+            <div class="content">
+              <img src="Pictures/GT/carolinacoffeeshop.png" alt="Mountains" style="width:100%">
+              <h4>Carolina Coffee shop</h4>
+              <p class="review">Breakfast&Brunch, Cafe, Sounthern</p>
+              <p class="review">Review: Great food and specials. Sweet potato tots is a must...</p>
+            </div>
+          </div>
+          <!-- <div class="column Breakfast">
+            <div class="content">
+            <img src="Pictures/GT/Purplebowl.png" alt="Lights" style="width:100%">
+              <h4>The Purple Bowl</h4>
+              <p class="review">Acai bowls, coffee&tea, breakfast&brunch</p>
+              <p class="review">Review: Build your own açaí bowl, avocado toast...</p>
+            </div>
+          </div>
+          <div class="column Breakfast">
+            <div class="content">
+            <img src="Pictures/GT/merritsgrill.png" alt="Breakfast" style="width:100%">
+              <h4>Merritt's Grill</h4>
+              <p class="review">Sandwiches</p>
+              <p class="review">Review: Merritt's is a local spot with tons of...</p>
+            </div>
+          </div> -->
+          
+          <!-- <div class="column Lunch">
+            <div class="content">
+              <img src="Pictures/GT/Linda's.png" alt="Car" style="width:100%">
+              <h4>Linda's grill</h4>
+              <p class="review">American, Bar</p>
+              <p class="review">Review: Two special shout outs to the Cuban sliders...</p>
+            </div>
+          </div> -->
+          <div class="column Lunch">
+            <div class="content">
+            <img src="Pictures/GT/deli.png" alt="Car" style="width:100%">
+              <h4>Mediterannean Deli</h4>
+              <p class="review">Mediterannean, Delis</p>
+              <p class="review">Review: A perfect (cheap) date meal = Lamb fatayer + two 1/4 pound side...</p>
+            </div>
+          </div>
+        
+          <div class="column Dinner">
+            <div class="content">
+              <img src="Pictures/GT/lantern.png" alt="Car" style="width:100%">
+              <h4>Lantern</h4>
+              <p class="review">Asian fusion,Bars,Event spaces</p>
+              <p class="review">Review: Their staples (e.g. Salt and pepper shrimp) are always good...</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+  </div>
+
+  <!--the overlay-->
+  <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="572_home.html">Home page</a>
+        <a href="#">Working position</a>
+        <a href="#">Chatting Pool</a>
+        <a href="572_contact">Contact us</a>
+      </div> 
+  </div>
+
+  <script>
+    /* Open */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+      
+    /* Close */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+  /*selection part*/
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+
+  <div class="footer">
+      <p>@2018 | YILING | UNC POOL</p>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yiling">
+  <meta name="description" content="website built for e-trading between person">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Go Tar</title>
+  <script src="jquery.js"></script>
+  <link type="text/css" rel="stylesheet" href="Scripts/572.css">
+  <link rel="go-tar-icon" alt="go-tar-icon" href="Pictures/SVG/Gotar.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Quattrocento:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-nav">
+    <div class="logo-container">
+      <a id="logo" href="572_home.html"><img src="Pictures/SVG/GoTar.svg"></a>
+      <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="menu">
+      <li><a href="572_eat.html">EAT</a></li>
+      <li><a class="active" href="572_event.html">EVENT</a></li>
+      <li><a href="572_account.html">TRANSPORT</a></li>
+      <li><a href="572_account.html">ACADEMIA</a></li>
+    </div>
+  </div>      
+
+  <div class="eat-boxes">
+    
+  </div>
+
+  <!--the overlay-->
+  <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="572_home.html">Home page</a>
+        <a href="#">Working position</a>
+        <a href="#">Chatting Pool</a>
+        <a href="572_contact.html">Contact us</a>
+      </div> 
+  </div>
+
+  <script>
+    /* Open */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+      
+    /* Close */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+  <div class="footer">
+      <p>@2018 | YILING | UNC POOL</p>
+  </div>
+
+
+</body>
+</html>

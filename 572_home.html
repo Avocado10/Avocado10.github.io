@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yiling">
+  <meta name="description" content="website built for e-trading between person">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Go Tar</title>
+  <script src="jquery.js"></script>
+  <link type="text/css" rel="stylesheet" href="Scripts/572.css">
+  <link rel="go-tar-icon" alt="go-tar-icon" href="Pictures/SVG/Gotar.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Quattrocento:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <div class="icon-bar">
+      <a class="active" href="572_eat.html">EAT</a>
+      <a href="#">EVENT</a>
+      <a href="572_account.html">TRANSPORT</a>
+      <a href="572_account.html">ACADEMIA</a>
+  </div>
+
+  <div class="background">
+      <img class="mySlides" src="Pictures/800px/Icecream.jpg" alt="An icecream" style='height: 100%; width: 100%; object-fit: contain'>
+      <img class="mySlides" src="Pictures/800px/Hustle.jpg" alt="Hustle" style='height: 100%; width: 100%; object-fit: contain'>
+      <img class="mySlides" src="Pictures/800px/parkingdeck.jpg" alt="P2P bus" style='height: 100%; width: 100%; object-fit: contain'>
+      <img class="mySlides" src="Pictures/800px/concert2.jpg" alt="concert" style='height: 100%; width: 100%; object-fit: contain'>
+  </div>
+
+  <div>
+    <div class="logo-cube">
+      <img class="logo" src="Pictures/SVG/GoTar.svg">
+    </div>
+
+    <div class="menu-cube">
+      <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">
+        Quick Links &#9776; Click!  
+      </span>
+    </div>
+
+    <div class="words-left">
+      <p>Your life guide as a tar heeler</p>
+      <p>Everything you need in Chapel Hill</p>
+      <p>As well as areas surround you</p>
+      <p>Enjoy !</p>
+    </div>
+
+    <div class="words-right">
+        <p>Wanna find an awesome place to eat?</p>
+        <p>Wanna get blend in with cool people like you?</p>
+        <p>Wanna ask any questions about this area?</p>
+        <p>Click !</p>
+    </div>
+  </div>
+
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="572_home.html">Home page</a>
+      <a href="#">Working position</a>
+      <a href="#">Chatting Pool</a>
+      <a href="572_contact.html">Contact us</a>
+    </div> 
+</div>
+
+
+  <div class="footer">
+    <p>@2018 | YILING | UNC POOL</p>
+  </div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+</body>
+
+</html>

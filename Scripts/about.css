@@ -154,6 +154,7 @@ a:hover{
 .tab a:hover li{
     background-color: #cbdc8b;
 }
+
 .tab a {
     display: inline;
     float: left;
@@ -282,6 +283,14 @@ hr{
         width: 50%;
         text-align: left;
         font-size: 1.0em;
+    }
+    #Hamburger{
+        display: none;
+    }
+    .tab{
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
     }
     hr{
         width: 100%;
